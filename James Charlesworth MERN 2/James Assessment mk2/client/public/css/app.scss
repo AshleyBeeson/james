@@ -1,0 +1,194 @@
+$quart: 25%;
+$half: 50%;
+$none: 0;
+$smallBorder: 1px solid;
+$center: center;
+$mainColor: #aacfff;
+$secondColor: #c9ddff;
+
+html {
+	font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin:0px
+}
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box; /* Firefox, other Gecko */
+          box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: $none;
+    margin: $none;
+    padding: $none;
+    vertical-align: baseline;
+}
+
+h1 {
+	text-align: $center;
+}
+
+ul.navbar-nav{
+	list-style: none;
+    margin: $none;
+    padding: $none;
+    text-align: $center;
+    border: $none;
+}
+
+ul.navbar-nav li.link {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+ul.navbar-nav li.link a{
+    padding: 10px 20px;
+    color: #000;
+    background-color: green;
+    text-decoration: none;
+    display: block;
+}
+
+ul.navbar-nav li.link a:active, ul.navbar-nav li.link a:hover{
+	color: #$mainColor;
+    background-color: #113650;
+}
+
+ul.navbar-nav li.link a span{
+	display: block;
+}
+
+#navbar-container {
+    margin: auto 0 auto auto;
+	display: inherit;
+}
+
+#content {
+    position: relative;
+	z-index: 1;
+	background: $mainColor;
+	background-color: #$mainColor;
+    box-shadow: inset 0px 0px 4px -1px #000;
+    padding: 10px;
+}
+
+.homeP{
+	width: 100%;
+	float: $center;
+	text-align: $center;
+	max-height: 500px;
+	background: $secondColor;
+}
+
+.inner{
+	background: $secondColor;
+}
+
+.page{
+	max-width: 60%;
+    margin: auto;
+}
+
+.bug{
+	border: $smallBorder;
+	background-color: $secondColor;
+}
+
+.id{
+	float:left;
+	width:$quart;
+	text-align:$center;
+	border: $smallBorder;
+}
+.issueId{
+	float:left;
+	width:$quart;
+	text-align:$center;
+	border: $smallBorder;
+}
+.date{
+	float:left;
+	width:$quart;
+	text-align:$center;
+	border: $smallBorder;
+}
+.priority{
+	float:left;
+	width:$quart;
+	text-align:$center;
+	border: $smallBorder;
+}
+.summary{
+	float:left;
+	width:75%;
+	text-align:$center;
+	border: $smallBorder;
+}
+.severity{
+	float:left;
+	width:$quart;
+	text-align:$center;
+	border: $smallBorder;
+}
+.description{
+	float:left;
+	width:100%;
+	text-align:$center;
+	border: $smallBorder;
+}
+.reporter{
+	float:left;
+	width:35%;
+	text-align:$center;
+	border: $smallBorder;
+}
+.assignedUser{
+	float:left;
+	width:35%;
+	text-align:$center;
+	border: $smallBorder;
+}
+.status{
+	float:left;
+	width:30%;
+	text-align:$center;
+	border: $smallBorder;
+}
+.basicDetails{
+	width: 100%;
+	height: 190px;
+	background: $secondColor;
+	
+}
+.actions{
+	width: 100%;
+	height: 110px;
+	background-color: $secondColor;
+	
+}
+.actionUser{
+	float:left;
+	width:$half;
+	text-align:$center;
+	border: $smallBorder;
+}
+.actionDate{
+	float:left;
+	width:$half;
+	text-align:$center;
+	border: $smallBorder;
+}
+.actionAction{
+	float:left;
+	width:100%;
+	text-align:$center;
+	border: $smallBorder;
+}
+.actionHead{
+	text-align: $center;
+}
